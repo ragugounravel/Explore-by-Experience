@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UNRAVEL – Experience Discovery Prototype</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:#f5f7fa;color:#222;}
+header{background:#fff;padding:18px 50px;box-shadow:0 2px 6px rgba(0,0,0,0.05);display:flex;justify-content:space-between;align-items:center;}
+.logo{font-weight:700;font-size:20px;letter-spacing:1px;}
+.container{padding:40px 50px;}
+.section{margin-bottom:70px;}
+.section-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
+.section-header h2{font-size:22px;font-weight:600;}
+.view-all{font-size:14px;color:#0071e3;cursor:pointer;}
+
+.subtext{color:#666;margin-bottom:15px;font-size:14px;}
+.countdown{display:flex;gap:20px;margin-top:10px;font-weight:600;}
+.countdown div{text-align:center;font-size:14px;}
+
+.search-box{background:#fff;padding:20px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,0.05);margin-bottom:40px;}
+.search-box input{width:100%;padding:12px;border-radius:6px;border:1px solid #ddd;font-size:14px;}
+
+.hotel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:25px;}
+.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.06);transition:0.3s;}
+.card:hover{transform:translateY(-6px);}
+.image-placeholder{height:160px;background:linear-gradient(135deg,#8e9eab,#eef2f3);}
+.card-content{padding:15px;}
+.badge{display:inline-block;background:#e53935;color:#fff;font-size:12px;padding:4px 8px;border-radius:4px;margin-bottom:8px;}
+.hotel-name{font-weight:600;font-size:15px;margin-bottom:5px;}
+.location{font-size:13px;color:#666;margin-bottom:6px;}
+.description{font-size:13px;color:#444;margin-bottom:8px;}
+.price{font-weight:600;}
+.old-price{text-decoration:line-through;color:#888;margin-right:6px;font-weight:400;}
+
+.experience-row{display:flex;gap:30px;overflow-x:auto;margin-top:20px;}
+.experience-item{text-align:center;cursor:pointer;min-width:140px;}
+.exp-circle{
+width:110px;height:110px;border-radius:50%;
+margin:0 auto 10px;
+display:flex;align-items:center;justify-content:center;
+color:#fff;font-weight:600;
+transition:0.3s;
+}
+.exp-circle:hover{transform:scale(1.08);}
+.exp-hist{background:linear-gradient(135deg,#c79081,#dfa579);}
+.exp-arch{background:linear-gradient(135deg,#667db6,#0082c8);}
+.exp-spirit{background:linear-gradient(135deg,#11998e,#38ef7d);}
+.exp-life{background:linear-gradient(135deg,#ee0979,#ff6a00);}
+
+#experienceResults{display:none;}
+.filter-bar{margin-bottom:25px;display:flex;gap:15px;align-items:center;}
+select{padding:8px 12px;border-radius:6px;border:1px solid #ddd;}
+
+.fade-in{animation:fadeIn 0.4s ease-in;}
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(10px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">UNRAVEL</div>
+<div>Experience Discovery – Interactive Prototype</div>
+</header>
+
+<div class="container">
+
+<!-- TOP DESTINATION -->
+<div class="section">
+<h2>Top Destinations, Up to 60% Off</h2>
+<div class="subtext">Iconic cities. Rare prices. Limited-time.</div>
+<div class="countdown">
+<div>01<br>Days</div>
+<div>12<br>Hours</div>
+<div>40<br>Mins</div>
+<div>50<br>Secs</div>
+</div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-box">
+<input type="text" value="Scenic Hotel Punakaiki | Tue, 12th May - Wed, 13th May | 1 Room, 2 Guests">
+</div>
+
+<!-- MECCA SECTION -->
+<div class="section">
+<div class="section-header">
+<h2>Sacred Views in the heart of Mecca</h2>
+<div class="view-all">View all</div>
+</div>
+
+<div class="hotel-grid">
+<div class="card">
+<div class="image-placeholder"></div>
+<div class="card-content">
+<div class="badge">53% off</div>
+<div class="hotel-name">Address Jabal Omar Makkah</div>
+<div class="location">Saudi Arabia</div>
+<div class="description">Elegant spiritual stay with serene modern interiors</div>
+<div class="price"><span class="old-price">BHD 123</span>BHD 58</div>
+</div>
+</div>
+
+<div class="card">
+<div class="image-placeholder"></div>
+<div class="card-content">
+<div class="badge">55% off</div>
+<div class="hotel-name">Hilton Hotel & Convention Jabal Omar Makkah</div>
+<div class="location">Saudi Arabia</div>
+<div class="description">Built for the city’s largest spiritual gatherings</div>
+<div class="price"><span class="old-price">BHD 131</span>BHD 60</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- EXPLORE BY EXPERIENCE -->
+<div class="section">
+<div class="section-header">
+<h2>Explore by Experience</h2>
+</div>
+
+<div class="experience-row">
+<div class="experience-item" onclick="loadExperience('Historical')">
+<div class="exp-circle exp-hist">Historical</div>
+</div>
+
+<div class="experience-item" onclick="loadExperience('Architectural')">
+<div class="exp-circle exp-arch">Architectural</div>
+</div>
+
+<div class="experience-item" onclick="loadExperience('Spiritual')">
+<div class="exp-circle exp-spirit">Spiritual</div>
+</div>
+
+<div class="experience-item" onclick="loadExperience('Luxury')">
+<div class="exp-circle exp-life">Once in Life</div>
+</div>
+</div>
+</div>
+
+<!-- EXPERIENCE RESULTS -->
+<div id="experienceResults" class="section fade-in">
+<div class="section-header">
+<h2 id="experienceTitle"></h2>
+</div>
+
+<div class="filter-bar">
+<label>Filter by Country:</label>
+<select onchange="filterCountry(this.value)">
+<option value="All">All</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="India">India</option>
+</select>
+</div>
+
+<div id="experienceGrid" class="hotel-grid"></div>
+</div>
+
+<!-- LONDON SECTION -->
+<div class="section">
+<div class="section-header">
+<h2>London Wrapped in Luxury</h2>
+<div class="view-all">View all</div>
+</div>
+
+<div class="hotel-grid">
+<div class="card">
+<div class="image-placeholder"></div>
+<div class="card-content">
+<div class="badge">60% off</div>
+<div class="hotel-name">Four Seasons Hotel London at Park Lane</div>
+<div class="location">United Kingdom</div>
+<div class="description">Iconic comfort with sweeping park and city views</div>
+<div class="price"><span class="old-price">BHD 895</span>BHD 355</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+const hotels = [
+{ name:"Conrad Makkah", location:"Saudi Arabia", experience:"Spiritual", description:"Refined design shaped for serene reflection", price:"BHD 78"},
+{ name:"Swissôtel Makkah", location:"Saudi Arabia", experience:"Spiritual", description:"Swiss precision at the crossroads of devotion", price:"BHD 91"},
+{ name:"The Lanesborough", location:"United Kingdom", experience:"Architectural", description:"Stately grandeur meets flawless service", price:"BHD 379"},
+{ name:"Brown's Hotel", location:"United Kingdom", experience:"Historical", description:"Classic Mayfair elegance with literary soul", price:"BHD 331"},
+{ name:"Taj Mahal Palace", location:"India", experience:"Historical", description:"Iconic heritage overlooking Gateway of India", price:"BHD 210"},
+{ name:"Burj Al Arab", location:"Saudi Arabia", experience:"Luxury", description:"World-famous ultra luxury landmark stay", price:"BHD 900"}
+];
+
+let currentExperience = "";
+
+function loadExperience(type){
+currentExperience = type;
+document.getElementById("experienceTitle").innerText = type + " Experiences";
+document.getElementById("experienceResults").style.display="block";
+renderHotels();
+window.scrollTo({top:document.getElementById("experienceResults").offsetTop-80,behavior:"smooth"});
+}
+
+function renderHotels(country="All"){
+const grid = document.getElementById("experienceGrid");
+grid.innerHTML="";
+
+let filtered = hotels.filter(h=>h.experience===currentExperience);
+if(country!=="All"){
+filtered = filtered.filter(h=>h.location===country);
+}
+
+filtered.forEach(hotel=>{
+grid.innerHTML+=`
+<div class="card">
+<div class="image-placeholder"></div>
+<div class="card-content">
+<div class="hotel-name">${hotel.name}</div>
+<div class="location">${hotel.location}</div>
+<div class="description">${hotel.description}</div>
+<div class="price">${hotel.price}</div>
+</div>
+</div>`;
+});
+}
+
+function filterCountry(country){
+renderHotels(country);
+}
+</script>
+
+</body>
+</html>
