@@ -87,9 +87,13 @@ Instead of asking:
 We ask:
 > "What kind of journey are you seeking?"
 
+---
+
 ### Prototype
 
 - **Explore by Experience** - [Demo link](https://ragugounravel.github.io/Explore-by-Experience/)
+
+<img src="image.png" width="100%" alt="Explore by Experience" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
 
 ---
 
