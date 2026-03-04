@@ -74,10 +74,16 @@ Reposition UNRAVEL as an **inspiration engine**, not just a booking utility.
 - Dynamic property curation  
 
 ### Initial Categories
-- Architectural Marvels  
-- Spiritual Retreats  
-- Cultural Heritage  
-- Historical & “Once in a Lifetime”  
+| Category                 | Primary Segment Target                         |
+| ------------------------ | ---------------------------------------------- |
+| Adventure Escapes        | Gen Z & Experience-First Travelers             |
+| Romantic Getaways        | Couples, Honeymooners & Anniversary Travelers  |
+| Architectural Marvels    | Premium, Design-Oriented Travelers             |
+| Spiritual Retreats       | Wellness & 40+ Reflective Segment              |
+| Cultural Heritage        | Cultural Explorers & Urban Knowledge Seekers   |
+| Historic Destinations    | Legacy & Memory-Driven Travelers               |
+| Once-in-a-Lifetime Stays | High-Income, Milestone & Bucket-List Travelers |
+
 
 ### UX Shift
 
@@ -89,30 +95,31 @@ We ask:
 
 ---
 
-### Prototype
+## Prototype
 
 - **Explore by Experience** - [Demo link](https://ragugounravel.github.io/Explore-by-Experience/)
 
-<img src="image.png" width="100%" alt="Explore by Experience" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+<img src="image.png" width="75%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+
 
 ---
 
 ## 4️⃣ Why This Works
 
-### ✅ Low Technical Risk
+✅ Low Technical Risk
 - Uses existing property tags  
 - No SEO disruption  
 - No structural search flow changes  
 
-### ✅ Behavioral Alignment
+✅ Behavioral Alignment
 Reduces cognitive load for:
 - Browsers  
 - Indecisive travelers  
 - Premium inspiration-seeking users  
 
-### ✅ Emotional Repositioning
+✅ Emotional Repositioning
 
-Cheap booking engine → Experience curator
+booking engine → Experience curator
 
 ---
 
@@ -120,14 +127,14 @@ Cheap booking engine → Experience curator
 
 If users discover by intent rather than geography:
 
-- 📈 Homepage CTR increases by 12–18%
+- 📈 Homepage Click-Through Rate (CTR) increases by 12–18%
 - 📈 Premium inventory views increase by 15%
-- 📈 AOV increases by 8–12%
+- 📈 Average Order Value (AOV) increases by 8–12%
 - 📈 Session depth increases by 10%+
 
 ---
 
-## 6️⃣ MVP & Experiment Plan
+## 6️⃣ Minimum Viable Product (MVP) & Experiment Plan
 
 ### Phase 1: A/B Test (20% Traffic)
 
@@ -135,10 +142,10 @@ If users discover by intent rather than geography:
 **Variant B:** Homepage + Experience module  
 
 ### Metrics to Track
-- CTR per module  
+- Click-Through Rate per module  
 - Save rate  
 - Add-to-cart rate  
-- AOV  
+- Average Order Value
 - Bounce rate  
 - Premium property share  
 
@@ -177,6 +184,12 @@ Mid-single digit revenue uplift within 6 months.
 
 ---
 
+### Phase 3 Evolution
+
+Tag-based curation → Behavior-based curation
+
+---
+
 ## 9️⃣ Long-Term Vision
 
 This discovery layer becomes the foundation for:
@@ -186,9 +199,6 @@ This discovery layer becomes the foundation for:
 - 🌍 Influencer-driven collections  
 - 💳 Bank-partner curated experiences  
 - 📖 Social travel storytelling integration  
-
-### Phase 3 Evolution
-
 
 ---
 
