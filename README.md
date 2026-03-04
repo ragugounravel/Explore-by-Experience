@@ -95,7 +95,7 @@ We ask:
 
 ---
 
-## Prototype
+## ✨ Prototype
 
 - **Explore by Experience** - [Demo link](https://ragugounravel.github.io/Explore-by-Experience/)
 
