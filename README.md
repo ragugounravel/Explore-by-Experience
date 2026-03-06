@@ -186,7 +186,7 @@ Mid-single digit revenue uplift within 6 months.
 
 ### Phase 3 Evolution
 
-Tag-based curation → Behavior-based curation
+Tag-based curation → Behavior-driven curation
 
 ---
 
