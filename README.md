@@ -7,11 +7,11 @@
 
 ## 📌 Overview
 
-UNRAVEL’s current homepage is optimized for transactional, price-sensitive, destination-driven search.  
+UNRAVEL’s current homepage is highly optimized for transactional, price-sensitive, destination-driven search. 
 
 The existing flow assumes:
 
-> "User knows WHERE they want to go."
+> "The existing flow is primarily designed for users who already know where they want to go."
 
 However, emerging premium segments increasingly think:
 
@@ -37,8 +37,8 @@ High-value segments are increasingly intent-driven rather than geography-driven.
 - **40+ travelers** seeking spiritual or cultural immersion  
 
 ### Core Issue
-UNRAVEL competes primarily on price instead of differentiation.
 
+This can sometimes position UNRAVEL closer to price comparison platforms rather than differentiated travel discovery experiences.
 ---
 
 ## 2️⃣ Strategic Insight
@@ -59,7 +59,7 @@ Not:
 
 ### Opportunity
 
-Reposition UNRAVEL as an **inspiration engine**, not just a booking utility.
+Expand UNRAVEL’s role from a booking utility to an inspiration-led travel discovery platform.
 
 ---
 
@@ -119,13 +119,13 @@ Reduces cognitive load for:
 
 ✅ Emotional Repositioning
 
-booking engine → Experience curator
+booking platform → Experience-led travel curator
 
 ---
 
 ## 5️⃣ Hypothesis
 
-If users discover by intent rather than geography:
+If discovery is supported through intent-led exploration rather than purely geographic search:
 
 - 📈 Homepage Click-Through Rate (CTR) increases by 12–18%
 - 📈 Premium inventory views increase by 15%
@@ -217,7 +217,7 @@ This discovery layer becomes the foundation for:
 By shifting from **“where” to “why,”** UNRAVEL can:
 
 - Increase premium conversion  
-- Escape commodity competition  
+- Reduce reliance on commodity-style competition 
 - Elevate brand perception  
 - Capture underserved high-margin cohorts  
 
