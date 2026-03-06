@@ -198,12 +198,11 @@ to{opacity:1;transform:translateY(0)}
 
 <div class="hero">
 
-<h1>UNRAVEL – Journey beyond ordinary</h1>
-
+<h1>Unravel – Journey beyond ordinary</h1>
 
 <p>Dream Escapes - upto 60% off</p>
 
-<div class="countdown">
+<div class= "countdown">
 
 <div><span id="days">00</span>Days</div>
 <div><span id="hours">00</span>Hours</div>
@@ -222,8 +221,6 @@ to{opacity:1;transform:translateY(0)}
 
 </div>
 </div>
-
-
 
 
 <!-- MECCA -->
@@ -345,10 +342,15 @@ titleBox.innerText = "Showing: " + title;
 results.style.display = "block";
 
 setTimeout(() => {
-results.scrollIntoView({
-behavior:"smooth",
-block:"start"
+
+let yOffset = -235; // adjust depending on spacing
+let y = results.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+window.scrollTo({
+top: y,
+behavior: "smooth"
 });
+
 },100);
 
 }
@@ -377,4 +379,3 @@ document.getElementById("secs").innerText = secs;
 
 </body>
 </html>
-
