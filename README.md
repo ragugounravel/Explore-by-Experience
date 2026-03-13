@@ -108,7 +108,7 @@ We ask:
 
 ✅ Low Technical Risk
 - Uses existing property tags  
-- No SEO disruption  
+- No Search Engine disruption  
 - No structural search flow changes  
 
 ✅ Behavioral Alignment
