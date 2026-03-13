@@ -38,7 +38,7 @@ High-value segments are increasingly intent-driven rather than geography-driven.
 
 ### Core Issue
 
-This can sometimes position UNRAVEL closer to price comparison platforms rather than differentiated travel discovery experiences.
+- This can sometimes position UNRAVEL closer to price comparison platforms rather than differentiated travel discovery experiences.
 ---
 
 ## 2️⃣ Strategic Insight
